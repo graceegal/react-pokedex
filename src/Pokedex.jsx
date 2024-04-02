@@ -13,7 +13,7 @@ const defaultPokemon = [
 
 function Pokedex({pokemonData = defaultPokemon}) {
     return (
-        <div>
+        <div className = "container d-flex flex-wrap column-gap-4 row-gap-4 mt-5">
             {pokemonData.map(p => Pokecard(p))}
         </div>
     )
